@@ -1,0 +1,404 @@
+<html>
+    <head>
+        <link rel="icon" type="image/x-icon" href="images/google-icon.png">
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght…00;500;700&family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <title>Google</title>
+        <style>
+                body{
+            margin:0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .header_line{
+            margin-top: 5px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 9px;
+        }
+
+        .text_nav{
+            color: black;
+            font-size: 13px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .text_nav:hover{
+            text-decoration: underline;
+        }
+
+        .nav_text{
+            margin-right: 3px;
+        }
+
+        .nav_profile{
+            display: flex;
+            align-items: center;
+        }
+
+        .mail{
+            margin-right: 10px;
+            margin-top: 5px;
+            align-items: center;
+        }
+
+        .logo{
+            margin-right: 8px;
+            margin-top: 10px;
+            margin-left: 0px;
+        }
+    
+
+
+        .button {
+            text-decoration: none;
+            background: #8ab4f8;
+            border: 1px solid transparent;
+            font-family: 'Roboto', sans-serif;
+            color: #202124;
+            min-width: 96px;
+            padding: 9px 23px;
+            box-sizing: border-box;
+            border-radius: 4px;
+            text-align: center;
+            line-height: 16px;
+            font-size: 14px;
+            font-weight: 500;
+            width: 96px;
+            height: 35px;
+            margin: 0px 8px;
+        }
+
+        .button:hover{
+            background-color: #79a5eb;
+        }
+
+        .logo_img {
+            margin-top: 5px;
+            margin-right: 10px;
+        }
+
+        .main{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 25px;
+        }
+
+        .bg_img{
+            margin-top: 90px;
+        }
+
+        .content{
+            margin: 0 auto;
+            padding-top: 6px;
+            position: relative;
+            max-width: 584px;
+            width: auto;
+        }
+
+        .input_form{
+            border: 1px solid #5f6368;
+            display: flex;
+            border-radius: 24px;
+            max-width: 584px;
+            min-height: 44px;
+            margin: 0 auto;
+            background: white;
+        }
+
+        .search_logo{
+            display: flex;
+        }
+        
+        .submit-text {
+            background: transparent;
+            border: none;
+            width: 0px;
+            height: 0px;
+        }
+
+        .input_text{
+            display: flex;
+            flex-wrap: wrap;
+            flex: 1;
+            background-color: white;
+            place-self: center;
+            font-size: 14px;
+        }
+
+        .text_area_input{
+            resize: none;
+            background-color: transparent;
+            border: none;
+            font-size: 18px;
+            margin:0;
+            padding: 0;
+            color: black;
+            word-wrap: break-word;
+            display: flex;
+            outline: none;
+            margin-bottom: -16px;
+            width: 400px;
+            
+        }
+
+        .icons_input{
+            display: flex;
+            flex: 0 0 auto;
+            flex-direction: row;
+            height: 44px;
+        }
+
+        .keyboard{
+            display: flex;
+            align-items: center;
+            width: 24px;
+            cursor: pointer;
+            margin-right: 10px;
+            margin-top: 10px;
+        }
+
+        .microphone{
+            display: flex;
+            align-items: center;
+            padding: 0 8px;
+            width: 24px;
+            cursor: pointer;
+        }
+
+        .camera{
+            display: flex;
+            align-items: center;
+            padding: 0 8px;
+            width: 20px;
+            cursor: pointer;
+            margin-right: 20px;
+        }
+
+        .btns{
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            font-size: 14px;
+            
+
+        }
+        .btns a{
+            height: 36px;
+            min-width: 54px;
+            text-align: end;
+            cursor: pointer;
+            padding: 0 16px;
+            border-radius: 4px;
+            background-color: #f8f9fa;
+            color: #3c4043;
+            margin-top: 20px;
+            text-decoration: none;
+            margin-right: 15px;
+            line-height: 35px;
+        }
+        .search-input {
+            margin: 0;
+            padding: 0;
+            padding-left: 10px;
+            height: 100%;
+            width: 100%;
+            border: none;
+            outline: none;
+            background-color: transparent;
+        }
+        .btns a:hover{
+            border: 1px solid rgb(99, 95, 95);
+        }
+
+        .search-section{
+            margin-bottom: 243px;
+        }
+
+        .footer{
+            background: #f2f2f2;
+            display: block;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            max-height: 130px;
+        }
+
+        .up_footer{
+            display: flex;
+            margin: 0;
+            padding: 15px 30px;
+            border-bottom: 1px solid gray;
+            color: #70757a;
+        }
+
+        .nav_footer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+        
+        .first_nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 8px;
+            padding: 10px;
+        }
+
+        .first_nav a {
+            color: #70757a;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .first_nav a:hover{
+            text-decoration: underline;
+        }
+
+        .second_nav{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin-top: 8px;
+            margin-left: -40px;
+        }
+
+        .second_nav a {
+            color: #70757a;
+            text-decoration: none;
+            margin-left: 1px;
+            margin-bottom: 6px;
+            padding: 4px;
+            font-size: 14px;
+        }
+        .second_nav a:hover{
+            text-decoration: underline;
+        }
+
+        .third_nav{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: 8px;
+            margin-right: 20px;
+            padding: 10px;
+        }
+        
+        .third_nav a {
+            color: #70757a;
+            font-size: 14px;
+            text-decoration: none;
+            margin-left: 20px;
+            margin-bottom: 10px;
+            margin-right: 10px;
+        }
+
+        .third_nav a:hover{
+            text-decoration: underline;
+        }
+
+        .nav_footer{
+            height: 58px;
+        }
+        </style>
+    </head>
+    <body>
+        <div class="header">
+            <div class ="container">
+                <div class = header_line>
+                    <div class = "nav_text">
+                        <a class="text_nav"href ="https://www.google.com/gmail/about/">Почта</a>
+                        <a class="text_nav"href ="https://www.google.com/imghp?hl=en&ogbl">Картинки</a>
+                    </div>
+                    <div class = "nav_profile">
+                        <div class ="logo">
+                            <a class ="logo_nav" href ="">
+                                <img class ="logo_img" src ="images/apps.svg" style="width: 25px; margin-top: -6px;margin-left: 4px;">
+                            </a>
+                        </div>
+                        <div class ="mail">
+                            <a class ="button" href ="#">Войти</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class ="main">
+            <div class ="bg_img">
+                <img src ="images/mainlogo.png" alt style="height: 92px; width: 272px;">
+            </div>
+        </div>
+
+
+        <div class ="search_section">
+                <div class ="inner_form">
+                    <div class ="content_form">
+                        <div class = "input_form">
+                            <div class = "search_logo">
+                                <div class = "logo">
+                                    <span>
+                                        <img src ="images/search.svg" alt style="width: 26px; margin-left: 16px;">
+                                    </span>
+
+                                </div>
+                            </div>
+                                <form action="https://google.ru/search" method="get" class ="input_text">
+                                    <input class = "text_area_input" type="text"  name ="q">
+                                    <input type="submit" class="submit-text">
+                                </form>
+                            <div class ="icons_input">
+                                <div class ="keybord">
+                                    <img title="Экранная клавиатура" src="images/Google-Noto-Emoji-Objects-62829-keyboard.1024.png" style="width: 24px;height: 24px;margin-top: 10px;margin-right: 20px;" alt="">
+                                </div>
+                                <div class = "microphone">
+                                    <img title="Голосовой поиск" src="images/Google_mic.svg.png" style="width: 14px;" alt>
+                                </div>
+                                <div class ="camera">
+                                    <img title="Поиск по картинке" src="images/Google_Lens_Icon.svg.png" style="width: 24px;height: 24px;" alt>
+                                </div>
+                            </div>
+                        </div>
+                            <div class ="btns">
+                                <a href ="#">Поиск в Google</a>
+                                <a href="https://www.google.com/doodles">Мне повезёт!</a>
+                            </div>
+                    </div>
+                </div>
+        </div>
+
+
+        <footer class ="footer">
+            <div class ="up_footer">Россия</div>
+                <div class ="footer_nav_info">
+                    <div class="nav_footer">
+                        <div class ="first_nav">
+                            <a href="https://about.google/?utm_source=google-RU&utm_medium=referral&utm_campaign=hp-footer&fg=1">Все о Google</a>
+                            <a href="https://ads.google.com/intl/ru_ru/home/?subid=ww-ww-et-g-awa-a-g_hpa…m_source=google.com&utm_medium=referral&utm_campaign=google_hpafooter&fg=1">Реклама</a>
+                            <a href="https://www.google.com/services/?subid=ww-ww-et-g-awa-a-g_hpbfoot1_1!o2&utm_source=google.com&utm_medium=referral&utm_campaign=google_hpbfooter&fg=1#?modal_active=none">Всё для бизнеса</a>
+                            <a href="https://www.google.com/search/howsearchworks/?fg=1">Как работает Google поиск</a>
+                        </div>
+                        <div class ="second_nav">
+                            <img src="images/list.png" alt style="margin-bottom: 5px; width: 12px; height: 14px;">
+                            <a href="https://sustainability.google/intl/ru/carbon-free/?utm_source=google…footer&utm_medium=housepromos&utm_campaign=bottom-footer&utm_content=#home">Наше третье десятилетие борьбы с изменением климата</a>
+                        </div>
+                        <div class = "third_nav">
+                            <a href="https://policies.google.com/privacy?hl=ru&fg=1">Концендициальность</a>
+                            <a href="https://policies.google.com/terms?hl=ru&fg=1">Условия</a>
+                            <a href="#">Настройки</a>
+                        </div>
+                    </div>
+                </div>
+        </footer>
+    </body>
+    
+</html>
