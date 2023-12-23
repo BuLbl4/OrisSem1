@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "/RCYrNMdgvoPTLYuTWzVw9MO7OshFoUIVdjV+t8WF8yd5ujaoT2MRakMCPntvY98zCyKDpZ4OepyqaidcRSFXw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Булат\\RiderProjects\\Homework4\\newServer\\newServer.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Булат\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
