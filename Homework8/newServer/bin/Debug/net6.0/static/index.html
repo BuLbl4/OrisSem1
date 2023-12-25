@@ -1,0 +1,123 @@
+<html>
+    <head>
+        <title>Авторизация в Batlle.net</title>
+        <meta charset="UTF-8">
+        <link rel="icon" type ="image/x-icon" href="images/head-icon.png">
+        <link rel="stylesheet" type="text/css" href="style.css">
+       
+    </head>
+    <body>
+        <main class ="inner">
+            <div class = "main_logo">
+                <img src="images/logo-horizontal-color-light.1z1fI.svg" alt style="width: 240px;height: 72px;">
+                
+            </div>
+            <div class ="content">
+                <h3 id ="authorization"><b>Авторизоваться</b></h3>
+            </div>
+            <div>
+            </div>
+            <div class="buttons_first">
+                <div class="google">
+                    <button type="submit" href ="google-logo-color.svg"><img src ="images/google-logo-color.svg">
+                    </button>
+                </div>
+                <div class ="facebook">
+                    <button type="submit" href ="facebook-logo-white.svg"><img src ="images/facebook-logo-white.svg">
+                    </button>
+                </div>
+                <div class ="apple">
+                    <button type="submit" href ="apple-logo-black.svg"><img src ="images/apple-logo-black.svg">
+                    </button>
+                </div>
+            </div>
+            <div class ="buttons_second">
+                <div class ="xbox">
+                    <button type="submit" href ="xbox-logo-white.svg"><img src ="images/xbox-logo-white.svg">
+                    </button>
+                </div>
+                <div class ="ps">
+                    <button type="submit" href ="ps.svg"><img src ="images/ps.svg">
+                    </button>
+                </div>
+                <div class ="nintendo">
+                    <button type="submit" href ="switch-logo-white.svg"><img src ="images/switch-logo-white.svg">
+                    </button>
+                </div>
+                <form class ="steam" action = "/Order/List" method="post" style="margin-top: 16px">
+                    <button><img src ="images/steam-logo-black.svg">
+                    </button>
+                </form>
+            </div>
+            <div class="registration">
+                <span>
+                    или войти через 
+                </span>
+            </div>
+            <form action="/Authorize/Add" method="post">
+                <div class="input_text">
+                    <input class ="password" type="text" title="Электронная почта или телефон" placeholder="Электронная почта или телефон"name="email">
+                </div> 
+                <div class="input_password">
+                    <input class ="password"type="password" title="Пароль" placeholder="Пароль" name="password">
+                </div>
+                
+                <div class ="btn">
+                    <button type="submit">Авторизоваться</button>
+                </div>
+            </form>
+            <form action="/Authorize/Update" method="post">
+                <div class="input_text">
+                    <input class ="password" type="text" title="Электронная почта или телефон" placeholder="Id"name="Id">
+                </div> 
+                <div class="input_text">
+                    <input class ="password" type="text" title="Электронная почта или телефон" placeholder="Обновите почту"name="email">
+                </div> 
+                <div class="input_password">
+                    <input class ="password"type="password" title="Пароль" placeholder="Обновите Пароль" name="password">
+                </div>
+                
+                <div class ="btn">
+                    <button type="submit">Обновить данные</button>
+                </div>
+            </form>
+            <form action="/Authorize/Delete" method="post">
+                <div class="input_text">
+                    <input class ="password" type="text" title="Удалить по Id" placeholder="Удалите запись по её Id"name="email">
+                </div> 
+                <div class ="btn">
+                    <button type="submit">Удалить по Id</button>
+                </div>
+            </form>
+            
+            <div class ="links">
+                <a id = "first" href="https://account.battle.net/creation/flow/creation-full"><b>Зарегистрируйте учетную запись Battle.net <br>бесплатно</b></a>
+                <br>
+                <br>
+                <a id="second" href="https://account.battle.net/recovery/ru/?ref=&theme=bnet-next&app=shop&hostingApp=shop&flowTrackingId=27fc2a3f-a0fa-43d1-9d53-f6bcb22c7cb5">
+                    <b >Вы не можете войти?</b>
+                    <img src ="images/arrow.svg" style="width: 12px; height: 12px;">
+                </a>
+            </div>
+        </main>
+        <footer>
+            <div class ="footer_links">
+                <a href ="https://www.blizzard.com/company/legal/eula"> ПОЛЬЗОВАТЕЛЬСКОЕ СОГЛАШЕНИЕ BLIZZARD </a>
+                <span>|</span>
+                <a href ="https://www.blizzard.com/company/legal/eula"> ПОЛИТИКА КОНФИДЕНЦИАЛЬНОСТИ </a>
+                <span>|</span>
+                <a href ="https://www.blizzard.com/company/legal/eula"> УСЛОВИЯ </a>
+                <span>|</span>
+                <br>
+                <a href ="https://www.blizzard.com/company/legal/eula"> АВТОРСКОЕ ПРАВО </a>
+                <span>|</span>
+                <a href ="https://www.blizzard.com/company/legal/eula"> ФАЙЛЫ COOKIE </a>
+                <span>|</span>
+                <a href ="https://www.blizzard.com/company/legal/eula"> ПАРАМЕТРЫ COOKIE </a>
+            </div>
+            <div class ="footer_text">
+                © BLIZZARD ENTERTAINMENT, INC., 2023
+            </div>
+        </footer>
+    </body>
+</html>
