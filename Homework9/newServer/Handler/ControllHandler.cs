@@ -66,7 +66,7 @@ public class ControllHander : IHandler
                     .FirstOrDefault(m => m.Name.Equals(methodName, StringComparison.OrdinalIgnoreCase));
 
 
-                if (strParams[1] == "SendToEmail")
+                if (strParams[1] == "Add")
                     parameterValues.Add(configuration);
                 
                 parameterValues.Add(context);
