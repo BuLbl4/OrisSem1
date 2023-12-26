@@ -1,0 +1,35 @@
+<form action="/Authorize/Add" method="post">
+                <div class="input_text">
+                    <input class ="password" type="text" title="Электронная почта или телефон" placeholder="Электронная почта или телефон"name="email">
+                </div> 
+                <div class="input_password">
+                    <input class ="password"type="password" title="Пароль" placeholder="Пароль" name="password">
+                </div>
+                
+                <div class ="btn">
+                    <button type="submit">Авторизоваться</button>
+                </div>
+            </form>
+            <form action="/Authorize/Update" method="post">
+                <div class="input_text">
+                    <input class ="password" type="text" title="Электронная почта или телефон" placeholder="Id"name="Id">
+                </div> 
+                <div class="input_text">
+                    <input class ="password" type="text" title="Электронная почта или телефон" placeholder="Обновите почту"name="email">
+                </div> 
+                <div class="input_password">
+                    <input class ="password"type="password" title="Пароль" placeholder="Обновите Пароль" name="password">
+                </div>
+                
+                <div class ="btn">
+                    <button type="submit">Обновить данные</button>
+                </div>
+            </form>
+            <form action="/Authorize/Delete" method="post">
+                <div class="input_text">
+                    <input class ="password" type="text" title="Удалить по Id" placeholder="Удалите запись по её Id"name="email">
+                </div> 
+                <div class ="btn">
+                    <button type="submit">Удалить по Id</button>
+                </div>
+            </form>
