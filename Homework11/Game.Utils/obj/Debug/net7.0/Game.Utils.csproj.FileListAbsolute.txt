@@ -1,0 +1,14 @@
+C:\Users\Булат\source\repos\Game.Utils\bin\Debug\net7.0\Game.Utils.exe
+C:\Users\Булат\source\repos\Game.Utils\bin\Debug\net7.0\Game.Utils.deps.json
+C:\Users\Булат\source\repos\Game.Utils\bin\Debug\net7.0\Game.Utils.runtimeconfig.json
+C:\Users\Булат\source\repos\Game.Utils\bin\Debug\net7.0\Game.Utils.dll
+C:\Users\Булат\source\repos\Game.Utils\bin\Debug\net7.0\Game.Utils.pdb
+C:\Users\Булат\source\repos\Game.Utils\obj\Debug\net7.0\Game.Utils.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Булат\source\repos\Game.Utils\obj\Debug\net7.0\Game.Utils.AssemblyInfoInputs.cache
+C:\Users\Булат\source\repos\Game.Utils\obj\Debug\net7.0\Game.Utils.AssemblyInfo.cs
+C:\Users\Булат\source\repos\Game.Utils\obj\Debug\net7.0\Game.Utils.csproj.CoreCompileInputs.cache
+C:\Users\Булат\source\repos\Game.Utils\obj\Debug\net7.0\Game.Utils.dll
+C:\Users\Булат\source\repos\Game.Utils\obj\Debug\net7.0\refint\Game.Utils.dll
+C:\Users\Булат\source\repos\Game.Utils\obj\Debug\net7.0\Game.Utils.pdb
+C:\Users\Булат\source\repos\Game.Utils\obj\Debug\net7.0\Game.Utils.genruntimeconfig.cache
+C:\Users\Булат\source\repos\Game.Utils\obj\Debug\net7.0\ref\Game.Utils.dll
